@@ -5,53 +5,53 @@
 <title>百度一下，你就知道</title>
 </head>
 <br>
- 
+
 <h1>我的h1标题</h1>
 <h2>我的h2标题</h2>
 <h3>我的h3标题</h3>
 <h4>我的h4标题</h4>
 <h5>我的h5标题</h5>
 <h6>我的h6标题</h6>
- 
+
 <p>我的第一个段落。我的第一个段落我的第一个段落我的第一个段落我的第一个段落我的第一个段落我的第一个段落我的第一个段落我的第一个段落我的第一个段落
     我的第一个段落我的我的第一个段落我的第一个段落我的第一个段落我的第一个段落我的第一个段落我的第一个段落我的第一个段落第一个段落我的第一个段落我的第一个段落我的第一个段落</p>
 <p>我的第一个段落。我的第一个段落我的第一个段落我的第一个段落我的第一个段落我的第一个段落我的第一个段落我的第一个段落我的第一个段落我的第一个段落
         我的第一个段落我的我的第一个段落我的第一个段落我的第一个段落我的第一个段落我的第一个段落我的第一个段落我的第一个段落第一个段落我的第一个段落我的第一个段落我的第一个段落</p>
-     
+    
     <!-- 超链接： 打开一个新页面  -->
     <!-- href = "网址"  href="https://www.baidu.com/" -->
     <!-- 在开始的标签内可以插入指定的 属性名=属性值 href="https://www.baidu.com/" -->
 
     <!-- target 打开新页面的目标：默认是在当页面打开  设置 _blank 后表示 在新页面打开  -->
-   <a href="https://www.baidu.com/" target="_blank">这是一个链接</a>
+    <a href="https://www.baidu.com/" target="_blank">这是一个链接</a>
 
-   <!-- src=路径  可以写完整的（绝对路径）也可以写不完整的路径（相对路径）   width="300" height="300"  -->
-   <img src="https://www.runoob.com/images/logo.png" width="258" height="39" />
+    <!-- src=路径  可以写完整的（绝对路径）也可以写不完整的路径（相对路径）   width="300" height="300"  -->
+    <img src="https://www.runoob.com/images/logo.png" width="258" height="39" />
     <!-- src=路径  也可以写不完整的路径（相对路径）   width="300" height="300"  -->
-   <img src="view.jpeg" width="458" height="239" />
+    <img src="view.jpeg" width="458" height="239" />
 
 
-   <!-- 标签有开始也有结束 -->
+    <!-- 标签有开始也有结束 -->
 
-   <!-- 注释：解释：快捷键 ctr + /   不会在页面中显示 是给看代码的人 看的-->
-   <!-- 注释 -->
+    <!-- 注释：解释：快捷键 ctr + /   不会在页面中显示 是给看代码的人 看的-->
+    <!-- 注释 -->
 
-   <!-- 怎样查看页面代码 -->
-   <!-- 在网页中右键 选择 查看源代码 -->
+    <!-- 怎样查看页面代码 -->
+    <!-- 在网页中右键 选择 查看源代码 -->
 
-   <!-- 字体加粗 -->
-   <!-- <br> 起到换行  而且是单个 -->
-   <br>
+    <!-- 字体加粗 -->
+    <!-- <br> 起到换行  而且是单个 -->
+    <br>
 
-   <b>字体加粗</b>
+    <b>字体加粗</b>
 
-   <br>
+    <br>
 
-   <i>字体斜体</i>
-   <br>
+    <i>字体斜体</i>
+    <br>
 
 
-   这是 <sub> 下标</sub> 和 <sup> 上标</sup>
+    这是 <sub> 下标</sub> 和 <sup> 上标</sup>
 
     <ul>
         <li>Coffee</li>
@@ -75,32 +75,48 @@
         <source src="movie.mp4" >
     </video> -->
 
-      
+    
     <!-- type类型  text 文本输入框 password 密码类型 -->
     First name: <input type="text" name="firstname"><br>
     Password: <input type="password" name="firstname"><br>
 
+    <input type="radio" name="sex" value="male">Male<br>
+    <input type="radio" name="sex" value="female">Female<br>
+
+    <select name="level">
+        <option value="上">上</option>
+        <option value="中" selected>中</option>
+        <option value="下">下</option>
+    </select>
     <!-- type="submit" 按钮 -->
-    <input type="submit" value="Submit">
+    <input type="button" value="Submit">
     <!-- 现在一般用这个 -->
     <button>按钮</button>
 
 
-    <table border="1">
+    <table border="1" cellspacing="0"  cellpadding="10">
         <thead>
             <tr>
-                <th>row 1, cell 1</th>
-                <th>row 1, cell 2</th>
+                <th colspan="3">row 1, cell 1</th>
+                <!-- <th>row 1, cell 2</th> -->
+                <!-- <th>row 1, cell 3</th> -->
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>row 1, cell 1</td>
-                <td>row 1, cell 2</td>
+                <td rowspan="2">row 2, cell 1</td>
+                <td>row 2, cell 2</td>
+                <td>row 2, cell 3</td>
             </tr>
             <tr>
-                <td>row 2, cell 1</td>
-                <td>row 2, cell 2</td>
+                <!-- <td>row 3, cell 1</td> -->
+                <td>row 3, cell 2</td>
+                <td>row 3, cell 3</td>
+            </tr>
+            <tr>
+                <td>row 3, cell 1</td>
+                <td colspan="2">row 3, cell 2</td>
+                <!-- <td>row 3, cell 3</td> -->
             </tr>
         </tbody>
     </table>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Forms Review</title>
+  </head>
+  <body>
+    <section id="overlay">
+
+      <p id="logo">Order your milktea!</p>
+      <hr>
+      <!--在这里进行您的代码编写-->
+      <form action="./submission.html" method="post">
+        <label>
+          你想要什么口味的奶茶？
+          <input required="required" minlength="4" maxlength="8" size="10" placeholder="请输入口味"></label>
+        </label>
+        <hr />
+        <label>
+          你想要几杯？
+          <input required type="number" min="1" max="5"></label>
+        </label>
+        <hr />
+        <label>
+          你需要的糖分量
+          <input type="range"  min="1" max="5" value="1"/>
+        </label>
+        <hr />
+        <label>
+          你想要什么顶料？
+          <input type="checkbox" name="ccc" value="ice">
+
+        </input>
+        <label>冰淇淋</label>
+
+          <input type="checkbox" name="ccc" value="milk">
+
+        </input>
+        <label>奶茶</label>
+
+          <input type="checkbox" name="ccc" value="coffee">
+
+        </input>
+
+        <label>可可粉</label>
+
+        </label>
+        <hr />
+        <label>
+          你需要加冰吗
+          <input type="radio" name="ice">YES</input>
+          <input type="radio" name="ice">NO</input>
+        </label>
+        <hr />
+        <label>
+          你需要加什么料
+          <select name="level">
+            <option value="上">珍珠</option>
+            <option value="中" selected>波霸</option>
+            <option value="下">布丁</option>
+          </select>
+        </label>
+        <hr />
+        <label>
+          你需要什么规格
+          <select name="size">
+            <option value="上">小杯</option>
+            <option value="中" selected>中杯</option>
+            <option value="下">大杯</option>
+          </select>
+        </label>
+        <hr />
+        <label>
+          你还有其他什么要求吗
+          <br />
+          <textarea type="textarea" ></textarea>
+        </label>
+        <hr />
+        <label>
+          你的电话
+          <input type="tel" />
+        </label>
+        <hr />
+        <label>
+          <input type="submit"></input>
+        </label>
+      </form>
+    </section>
+  </body>
+</html>

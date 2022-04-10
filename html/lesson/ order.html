@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Forms Review</title>
+  </head>
+  <body>
+    <!-- html 5.0 版本 新增了一些语义化标签: 比较容易记 button-->
+    <!-- section/head/footer/nav/article -->
+    <!-- div p h1 span ul li table -->
+    <section id="overlay">
+      <p id="logo">Order your milktea!</p>
+      <hr>
+      <!--在这里进行您的代码编写-->
+      <!-- form：表单 进行一些信息填写与提交 -->
+      <form action="./submission.html" method="POST">
+        <!-- label 主要是和input 一起使用 label嵌套 文字和input -->
+        <!-- 点击 label 自动定位口味输入框 现在浏览器自带 -->
+        <label>
+          你想要什么口味的奶茶？
+          <!-- required 必填属性 点击按钮后提示   -->
+          <input required minlength="2" maxlength="5" />
+        </label>
+        <hr />
+        <label>
+          你想要几杯？
+          <!-- 设置数字输入框的最少和最多限制 -->
+          <input type="number" min="1" max="3"/>
+        </label>
+        <hr />
+        <label>
+          你需要的糖分量
+          <!-- <progress></progress> -->
+          <!-- 设置进度的最少和最多限制 min max-->
+          <input min="1" max="5" type="range"/>
+        </label>
+        <hr />
+        <!-- input type=radio或者checkbox时候需要 设置name属性  name后面的值需要相同 这样才能单选或多选 -->
+        <label>
+          你想要什么顶料？
+          <input type="checkbox" name="checkbox">1.冰淇淋</input>
+          <input type="checkbox" name="checkbox">2.奶盖</input>
+          <input type="checkbox" name="checkbox">3.可可粉</input>
+
+        </label>
+        <hr />
+        <label>
+          你需要加冰吗？
+          <input type="radio" name="a">YES</input>
+          <input type="radio" name="a">NO</input>
+        </label>
+        <hr />
+        <label>
+          你要什么规格？
+          <select>
+            <option value="小杯">小杯</option>
+            <option value="中杯">中杯</option>
+            <option value="大杯">大杯</option>
+          </Select>
+        </label>
+        <hr />
+        <label>
+          <!-- textarea 文本输入框 会多行
+          input是 输入框  -->
+          您还有别的什么要求吗
+          <textarea></textarea>
+        </label>
+        <hr />
+        <label>
+          电话号码
+          <input  type="tel" />
+        </label>
+        <hr />
+        <!-- type=submit 是一个按钮 主要用处是和form标签一起使用 点击后会跳转form的到abc（action=abc ） -->
+        <input type="submit" value="按钮"></input>
+      </form>
+    </section>
+  </body>
+</html>

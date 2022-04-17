@@ -1,0 +1,22 @@
+thead > tr {
+    background-color: #eee;
+}
+tbody > tr:nth-child(odd) {
+    background-color: #fff;
+}
+tbody > tr:nth-child(even) {
+    background-color: #eee;
+}
+
+th {
+    background-color: #000;
+    color: #fff;
+}
+
+th:nth-child(2),td:nth-child(2) {
+    color: #fff;
+}
+
+th:nth-child(3n+3),td:nth-child(3n+3) {
+    color: red;
+}

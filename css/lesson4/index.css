@@ -1,0 +1,12 @@
+h2 {
+    writing-mode:  vertical-lr;
+    float: left;
+}
+p:last-child {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+*{
+    font-family: 'Architects Daughter', cursive;
+}

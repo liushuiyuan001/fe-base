@@ -1,0 +1,16 @@
+a {
+    color: red;
+}
+a:visited {
+    color: green;
+}
+
+a:hover {
+    text-decoration: none;
+}
+a[href*="contact"] {
+    color: black;
+}
+a[href^="https"] {
+    color: cyan;
+}

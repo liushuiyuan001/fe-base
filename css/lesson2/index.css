@@ -1,0 +1,18 @@
+.container {
+    margin: 0 auto;
+    background-color: #fff;
+    width: 800px;
+    border: 1px solid #ddd;
+    border-radius:4px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container div {
+    height:400px
+}
+.container div:nth-child(even) {
+    background-color: #ccc;
+}
+p {
+    text-indent: 1cm;
+}

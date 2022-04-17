@@ -1,0 +1,24 @@
+ul > li {
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+ul > li > ol > li {
+    background: #eee;
+}
+
+ul > li > ol > li > ol > li {
+    border: 1px dashed #ccc;
+}
+
+ul > li > ol > li > ol > li:last-child {
+    font-style: italic;
+    color: red;
+    background-color: #000;
+}
+
+li:first-child {
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+}
